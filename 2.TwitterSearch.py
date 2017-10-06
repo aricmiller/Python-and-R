@@ -10,15 +10,15 @@ import twitter
 
 #Consumer keys and access tokens, used for OAuth
 api = twitter.Api(
- consumer_key = '0k9u7aRiUdQOB6Z856FRiWXon',
- consumer_secret = '9GQQVz3J7IqESvO2gfL2ZaEpg6Au9ELQuQsmHvZsKf0QHx7G52',
- access_token_key = '311255648-BIs4gRnMre7qfmA3WRjOF8BRR812RsQAy80ZNveR',
- access_token_secret = 'ja9XpuW98L9LJWo9QKv4dpdZ4GxMW7e3kKqKTtHzKOT2S')
+ consumer_key = '',#removed for security
+ consumer_secret = '',#removed for security
+ access_token_key = '',#removed for security
+ access_token_secret = '')#removed for security
 
 search = api.GetSearch(term=('Starbucks','coffee'), lang='en', result_type='', max_id='', count=100, include_entities=False)
 status_ID=[]
 
-output1 = open('C:\\Users\\amill_000\\Documents\\Fintech\\Twitter_info1.csv', 'a')
+output1 = open('C:\\Documents\\Fintech\\Twitter_info1.csv', 'a')
 for t in search:
     status_ID.append(t.id)
     output1.write(str(t.user.id)+";    "+t.user.screen_name.encode('utf-8')+";    "+t.user.location.encode('utf-8')+";    "
