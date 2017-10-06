@@ -11,10 +11,10 @@ from tweepy import OAuthHandler
 from tweepy import StreamListener
 
 #Consumer keys and access tokens, used for OAuth
-consumer_key = '0k9u7aRiUdQOB6Z856FRiWXon'
-consumer_secret = '9GQQVz3J7IqESvO2gfL2ZaEpg6Au9ELQuQsmHvZsKf0QHx7G52'
-access_token = '311255648-BIs4gRnMre7qfmA3WRjOF8BRR812RsQAy80ZNveR'
-access_token_secret = 'ja9XpuW98L9LJWo9QKv4dpdZ4GxMW7e3kKqKTtHzKOT2S'
+consumer_key = '' #removed for security
+consumer_secret = ''#removed for security
+access_token = ''#removed for security
+access_token_secret = ''#removed for security
 
 # Class below handles data received from the twitter stream
 class StdOutListener(StreamListener):
